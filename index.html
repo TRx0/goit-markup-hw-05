@@ -48,7 +48,7 @@
         <section class="hero">
             <div class="container ">
                 <h1 class="hero-text">Эффективные решения <br /> для вашего бизнеса</h1>
-                <button type="button" class="main-button" > Заказать услугу</button>
+                <button type="button" class="main-button" data-modal-open> Заказать услугу</button>
             </div>
         </section>
         <section class="advantages">
@@ -97,9 +97,24 @@
             <div class="container">
             <h2 class="site-subtitle">Чем мы занимаемся</h2>
             <ul class="list img-list">
-                <li class="img-item"><img src="./images/img1.jpg" alt="Человек набирает текст" width="370" height="294"></li>
-                <li class="img-item"><img src="./images/img2.jpg" alt="Человек выбирает макета сайта" width="370" height="294"></li>
-                <li class="img-item"><img src="./images/img3.jpg" alt="Человек выбирает нужный цвет" width="370" height="294"></li>
+                <li class="img-item">
+                    <div class="item-wrapper">
+                        <img src="./images/img1.jpg" alt="Человек набирает текст" width="370" height="294">
+                        <p class="text-wrapper">Десктопные приложения</p>
+                    </div>
+                </li>
+                <li class="img-item">
+                    <div class="item-wrapper">
+                        <img src="./images/img2.jpg" alt="Человек выбирает макета сайта" width="370" height="294">
+                        <p class="text-wrapper">Мобильные приложения</p>
+                    </div>
+                </li>
+                <li class="img-item">
+                    <div class="item-wrapper">
+                        <img src="./images/img3.jpg" alt="Человек выбирает нужный цвет" width="370" height="294">
+                        <p class="text-wrapper">Дизайнерские решения</p>
+                    </div>
+                </li>
             </ul>
             </div>
         </section>
@@ -355,5 +370,13 @@
         </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-wrapper">
+            <button class="modal-btn" type="button" data-modal-close>&#10006</button>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, explicabo!
+            </p>
+        </div>
+    </div>
+    <script src="/js/modal.js"></script>
 </body>
 </html>
